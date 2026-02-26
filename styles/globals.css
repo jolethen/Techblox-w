@@ -233,3 +233,61 @@ pre {
   color: white;
   border-bottom: 1px solid white;
   }
+/* ========================= */
+/* 🛰 MMORPG PAGE */
+/* ========================= */
+
+.mmorpg-page {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.mmorpg-title {
+  text-align: center;
+  font-size: 36px;
+  color: #00f0ff;
+  text-shadow: 0 0 15px #00f0ff;
+}
+
+.mmorpg-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #a0a0ff;
+}
+
+.update-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.update-card {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid #00f0ff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.update-card:hover {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.5);
+  transform: translateY(-5px);
+}
+
+.update-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.version {
+  color: #ff00ff;
+  font-weight: bold;
+}
+
+.date {
+  color: #888;
+}
