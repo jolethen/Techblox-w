@@ -1,19 +1,72 @@
-/* === CYBERPUNK BASE THEME === */
+/* MMORPG Channel */
 
-:root {
-  --neon-blue: #00f0ff;
-  --neon-pink: #ff00ff;
-  --bg-dark: #0a0a0f;
+.mmorpg-container {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-body {
-  background: var(--bg-dark);
-  color: white;
-  font-family: 'Orbitron', sans-serif;
+.mmorpg-header {
+  text-align: center;
+  font-size: 28px;
+  color: #00f0ff;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+  text-shadow: 0 0 15px #00f0ff;
 }
 
-/* Neon Glow Utility */
-.neon-glow {
-  text-shadow: 0 0 10px var(--neon-blue),
-               0 0 20px var(--neon-blue);
+.log-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.log-entry {
+  border-left: 3px solid #00f0ff;
+  padding: 20px 25px;
+  background: rgba(0, 240, 255, 0.03);
+  transition: 0.3s ease;
+}
+
+.log-entry:hover {
+  background: rgba(0, 240, 255, 0.08);
+}
+
+.log-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.log-id {
+  color: #ff00ff;
+}
+
+.log-status {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.log-status.active {
+  color: #00ff88;
+}
+
+.log-status.testing {
+  color: #ffaa00;
+}
+
+.log-status.planned {
+  color: #ff5555;
+}
+
+.log-title {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.log-content {
+  color: #bbbbbb;
 }
