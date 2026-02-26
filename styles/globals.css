@@ -1,72 +1,147 @@
-/* MMORPG Channel */
+/* ===========================
+   TECHBLOX CYBERPUNK GLOBAL
+   =========================== */
 
-.mmorpg-container {
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: auto;
+/* RESET BUT NOT REALLY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
 }
 
-.mmorpg-header {
-  text-align: center;
-  font-size: 28px;
-  color: #00f0ff;
-  letter-spacing: 4px;
-  margin-bottom: 60px;
-  text-shadow: 0 0 15px #00f0ff;
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
-.log-feed {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.log-entry {
-  border-left: 3px solid #00f0ff;
-  padding: 20px 25px;
-  background: rgba(0, 240, 255, 0.03);
-  transition: 0.3s ease;
-}
-
-.log-entry:hover {
-  background: rgba(0, 240, 255, 0.08);
-}
-
-.log-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  margin-bottom: 10px;
-  color: #888;
-}
-
-.log-id {
-  color: #ff00ff;
-}
-
-.log-status {
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.log-status.active {
-  color: #00ff88;
-}
-
-.log-status.testing {
-  color: #ffaa00;
-}
-
-.log-status.planned {
-  color: #ff5555;
-}
-
-.log-title {
+/* BACKGROUND */
+body {
+  background: radial-gradient(circle at 20% 20%, #111122 0%, #05050a 40%, #000000 100%);
   color: #ffffff;
-  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
 }
 
-.log-content {
-  color: #bbbbbb;
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00f0ff;
+  box-shadow: 0 0 10px #00f0ff;
+}
+
+/* HEADINGS GLOW */
+h1, h2, h3, h4 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 5px #00f0ff,
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff;
+}
+
+/* LINKS */
+a {
+  color: #ff00ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+/* BUTTONS */
+button {
+  background: transparent;
+  border: 2px solid #00f0ff;
+  padding: 10px 20px;
+  color: #00f0ff;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #00f0ff;
+  color: #000;
+  box-shadow:
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff,
+    0 0 40px #00f0ff;
+}
+
+/* MAIN LAYOUT */
+main {
+  padding: 80px 20px;
+}
+
+/* CARDS */
+div {
+  backdrop-filter: blur(6px);
+}
+
+/* GENERIC GLOW UTILITY */
+.neon-blue {
+  color: #00f0ff;
+  text-shadow:
+    0 0 5px #00f0ff,
+    0 0 15px #00f0ff,
+    0 0 30px #00f0ff;
+}
+
+.neon-pink {
+  color: #ff00ff;
+  text-shadow:
+    0 0 5px #ff00ff,
+    0 0 15px #ff00ff,
+    0 0 30px #ff00ff;
+}
+
+/* GLASS PANELS */
+.panel {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+}
+
+/* HOVER LIFT */
+.panel:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 25px rgba(0, 240, 255, 0.4),
+    0 0 50px rgba(0, 240, 255, 0.3);
+}
+
+/* TERMINAL TEXT */
+code {
+  background: #000;
+  color: #00ff88;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* FAKE SCANLINE EFFECT */
+body::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  z-index: 9999;
 }
